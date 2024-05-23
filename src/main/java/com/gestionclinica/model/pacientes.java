@@ -1,58 +1,73 @@
 package com.gestionclinica.model;
 
 public class pacientes {
-    private Integer idpacientes;
+    private Integer idPacientes;
     private String nombre;
     private String apellido;
-    private Integer documento_id;
-    private String no_telefono;
-    private Integer id_medico;
+    private Integer documentoId;
+    private String noTelefono;
+    private Integer idMedico;
 
-    public pacientes(){
-
-    }
-    public pacientes(Integer idPacientes, String nombre , String apellido, Integer documento_id, String no_telefono, Integer id_medico){
-        this.idpacientes = idPacientes;
+    public pacientes(Integer idPacientes, String nombre, String apellido, Integer documentoId, String noTelefono, Integer idMedico) {
+        this.idPacientes = idPacientes;
         this.nombre = nombre;
         this.apellido = apellido;
-        this.documento_id = documento_id;
-        this.no_telefono = no_telefono;
-        this.id_medico = id_medico;
+        this.documentoId = documentoId;
+        this.noTelefono = noTelefono;
+        this.idMedico = idMedico;
     }
-    public Integer getIdpacientes() {
-        return idpacientes;
+
+    public pacientes(String nombre, String apellido) {
+        this.nombre = nombre;
+        this.apellido = apellido;
     }
-    public void setIdpacientes(Integer idpacientes) {
-        this.idpacientes = idpacientes;
+
+    public Integer getIdPacientes() {
+        return idPacientes;
     }
+
+    public void setIdPacientes(Integer idPacientes) {
+        this.idPacientes = idPacientes;
+    }
+
     public String getNombre() {
         return nombre;
     }
+
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
+
     public String getApellido() {
         return apellido;
     }
+
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
-    public Integer getDocumento_id() {
-        return documento_id;
+
+    public Integer getdocumentoId() {
+        return documentoId;
     }
-    public void setDocumento_id(Integer documento_id) {
-        this.documento_id = documento_id;
+
+    public void setDocumentoId(Integer documentoId) {
+        this.documentoId = documentoId;
     }
-    public String getNo_telefono() {
-        return no_telefono;
+
+    public String getNoTelefono() {
+        return noTelefono;
     }
-    public void setNo_telefono(String no_telefono) {
-        this.no_telefono = no_telefono;
+
+    public void setNoTelefono(String noTelefono) {
+        this.noTelefono = noTelefono;
     }
-    public Integer getId_medico() {
-        return id_medico;
+
+    public Integer getIdMedico() {
+        return idMedico;
     }
-    public void setId_medico(Integer id_medico) {
-        this.id_medico = id_medico;
+
+    public void setIdMedico(Integer idMedico) {
+        this.idMedico = idMedico;
     }
 }
+

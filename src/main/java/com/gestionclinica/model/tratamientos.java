@@ -63,6 +63,14 @@ public class tratamientos {
     public void setIdpacientes(Integer idpacientes) {
         this.idpacientes = idpacientes;
     }
+    public Object getNombre() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getNombre'");
+    }
+    public String getTipo() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getTipo'");
+    }
 
     
 }
